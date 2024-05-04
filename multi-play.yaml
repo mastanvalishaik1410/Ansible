@@ -1,12 +1,12 @@
 - name: multiplay
   hosts: localhost
   tasks:
-    name: multi play1
+  - name: multi play1
     ansible.builtin.debug:
     msg: "from play1"
 - name: multiplay2
   hosts: localhost
   tasks:
-    name: multi play2
+  - name: multi play2
     ansible.builtin.debug:
     msg: "from play2" 
