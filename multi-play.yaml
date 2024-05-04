@@ -3,10 +3,10 @@
   tasks:
   - name: playbook1
     ansible.builtin.debug:
-    msg: "from pb1"
+     msg: "from pb1"
 - name: Multiplay book2
   hosts: localhost
   tasks:
   - name: playbook2
     ansible.builtin.debug:
-    msg: "from pb2"
+     msg: "from pb2"
