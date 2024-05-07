@@ -1,6 +1,6 @@
 - name: Variables
   hosts: localhost
-  Vars:
+  vars:
     Course: "Devops"
     Trainer: "Baji"
     Duration: "120hrs"
