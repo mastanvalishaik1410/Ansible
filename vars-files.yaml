@@ -5,4 +5,4 @@
   tasks:
   - name: variable
     ansible.builtin.debug:
-      msg: " i am learning {{Cours}} from {{Trainer}} and {{Duration}}"
+      msg: " i am learning {{Course}} from {{Trainer}} and {{Duration}}"
