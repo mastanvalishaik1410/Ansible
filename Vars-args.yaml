@@ -1,5 +1,5 @@
 - name: VarsArgs
-  Hosts: localhost
+  hosts: localhost
   tasks:
   - name: VarsArgs
     ansible.builtin.debug:
