@@ -5,12 +5,15 @@
     ansible.builtin.command: id expense
     register: user
     ignore_errors: true
+
   - name: Output
     ansible.builtin.debug:
       msg: "hi {{user}}"
+
   - name: create user
     ansible.builtin.command: useradd expense
-    when: user.rc !=0
+    when: user.rc != 0
+
   - name: print info
     ansible.builtin.debug:
       msg: "Hi Baji"
