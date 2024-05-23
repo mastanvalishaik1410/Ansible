@@ -1,0 +1,9 @@
+- name: Conditions
+  hosts: web
+  tasks:
+  - name: checking user
+    ansible.builtin.command: id expense
+    ignore_errors: true
+  - name: print info
+    ansible.builtin.debug:
+      msg: "Hi Baji"
