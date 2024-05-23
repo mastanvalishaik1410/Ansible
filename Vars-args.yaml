@@ -1,0 +1,6 @@
+- name: VarsArgs
+  Hosts: localhost
+  tasks:
+  - name: VarsArgs
+    ansible.builtin.debug:
+      msg: "Hello {{Person}}{{Wishes}}"
