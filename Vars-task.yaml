@@ -5,8 +5,10 @@
     Trainer: "Baji"
     Duration: "120hrs"
   tasks:
-    Course: "DevOps"
-    Trainer: "Baji"
-    Duration: "120hrs"
+  - name: Print Info
+    vars:
+      Course: "DevOps"
+      Trainer: "Baji"
+      Duration: "120hrs"
     ansible.builtin.debug:
-      msg: "i am a=learning{{Course}}from {{Trainer}} and duration {{Duration}}"
+       msg: "i am =learning{{Course}}from {{Trainer}} and duration {{Duration}}"
