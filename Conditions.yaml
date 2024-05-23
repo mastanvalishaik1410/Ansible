@@ -1,5 +1,6 @@
 - name: Conditions
   hosts: web
+  enable: yes
   tasks:
   - name: checking user
     ansible.builtin.command: id expense
@@ -11,7 +12,7 @@
       msg: "hi {{user}}"
 
   - name: create user
-    ansible.builtin.command: sudo useradd expense
+    ansible.builtin.command: useradd expense
     when: user.rc !=0
 
   - name: print info
