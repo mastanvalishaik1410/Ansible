@@ -1,6 +1,6 @@
 - name: Conditions
   hosts: web
-  enable: yes
+  become: yes
   tasks:
   - name: checking user
     ansible.builtin.command: id expense
