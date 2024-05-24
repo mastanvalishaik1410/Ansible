@@ -16,7 +16,8 @@
 
 - name: Unique values
   hosts: localhost
-  list: ['1', '2', '2', '3', '3']
+  vars:
+    list: [1, 2, 2, 3, 3]
   tasks:
   - name: remove duplicates
     ansible.builtin.debug:
