@@ -1,8 +1,8 @@
-- name: varaibles11
+- name: Check Number
   hosts: localhost
   vars_prompt:
   - name: number
-    propmt: enter number
+    prompt: enter number
     private: no
   tasks:
   - name: greater number
