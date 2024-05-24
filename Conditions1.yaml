@@ -1,0 +1,11 @@
+- name : Variables
+  hosts: localhost
+  vars_prompt:
+  - name: number
+    prompt: enter number
+    private: no
+  tasks:
+  - name: greater number
+    ansible.builtin.debug:
+    msg: "given number {{number}}is greaterthan 10"
+  when: number > 10
