@@ -13,3 +13,11 @@
   - name: upper
     ansible.builtin.debug:
      msg: "this is {{greetings | upper }}"
+    
+  - name: unique
+    hosts: localhost
+    list: [1,2,3,3,4,4]
+    tasks:
+    - name: unique
+      ansible.builtin.debug:
+       msg: "{{list | unique}}"
