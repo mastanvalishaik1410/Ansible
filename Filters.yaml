@@ -32,4 +32,18 @@
     ansible.builtin.debug:
       msg: "min age is {{ages | min}} and max age is {{ ages| max}}"
 
+- name: dict to items
+  hosts: localhost
+  vars:
+    mydict:
+      course: devops
+      duration: 120 hrs
+  tasks:
+  - name: before dict to items
+    ansible.builtin.debug:
+      msg: "{{mydict}}"
+  - name: after dict to items
+    ansible.builtin.debug:
+      msg: "{{mydict | dict2items}}"
+
  
