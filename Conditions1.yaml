@@ -1,4 +1,4 @@
-- name: varaibles
+- name: varaibles11
   hosts: localhost
   vars_prompt:
   - name: number
