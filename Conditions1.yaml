@@ -7,5 +7,5 @@
   tasks:
   - name: greater number
     ansible.builtin.debug:
-    msg: "nmuber {{number}} is greterthan 10"
+     msg: "nmuber {{number}} is greterthan 10"
   when: number > 10
