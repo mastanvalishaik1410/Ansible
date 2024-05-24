@@ -4,3 +4,12 @@
   - name: default
     ansible.builtin.debug:
      msg: "this is {{course | default('ansible') }}"
+
+- name: Upper values
+  hosts: localhost
+  vars:
+    greetings: "hi good morning"
+  tasks:
+  - name: upper
+    ansible.builtin.debug:
+     msg: "this is {{greetings | upper }}"
